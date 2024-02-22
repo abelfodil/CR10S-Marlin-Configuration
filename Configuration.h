@@ -651,9 +651,9 @@
  * (especially before PID tuning). Setting the target temperature too close to MAXTEMP guarantees
  * a MAXTEMP shutdown! Use these values to forbid temperatures being set too close to MAXTEMP.
  */
-#define HOTEND_OVERSHOOT  2   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
-#define BED_OVERSHOOT     2   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
-#define COOLER_OVERSHOOT  2   // (°C) Forbid temperatures closer than OVERSHOOT
+#define HOTEND_OVERSHOOT  0   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
+#define BED_OVERSHOOT     0   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
+#define COOLER_OVERSHOOT  0   // (°C) Forbid temperatures closer than OVERSHOOT
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -686,9 +686,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp  27.67
+    #define DEFAULT_Ki   2.11
+    #define DEFAULT_Kd  90.68
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
