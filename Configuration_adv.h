@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "config/examples/Creality/CR-10S/CrealityV1"
+#define CONFIG_EXAMPLES_DIR "config/examples/Creality/CR-10S/BLTouch"
 
 /**
  * Configuration_adv.h
