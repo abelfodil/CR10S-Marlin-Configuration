@@ -9,7 +9,7 @@ USER vscode
 
 WORKDIR /home/vscode
 
-ARG MARLIN_VERSION="2.1.2.2"
+ARG MARLIN_VERSION="2.1.2.5"
 RUN git clone https://github.com/MarlinFirmware/Marlin.git -b ${MARLIN_VERSION} --single-branch
 
 RUN pio run -d Marlin
