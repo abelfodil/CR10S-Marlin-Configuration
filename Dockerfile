@@ -1,4 +1,4 @@
-ARG VARIANT="3.10-bullseye"
+ARG VARIANT="3.12-bookworm"
 FROM mcr.microsoft.com/vscode/devcontainers/python:${VARIANT}
 
 RUN pip install -U https://github.com/platformio/platformio-core/archive/master.zip
